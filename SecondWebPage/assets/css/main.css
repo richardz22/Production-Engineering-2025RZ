@@ -2563,6 +2563,30 @@ input, select, textarea {
 			.image.fit img {
 				width: 100%;
 			}
+		
+		.image.fit.square {
+			overflow: hidden;          /* hides anything outside the square */
+			border-radius: 0;          /* removes theme rounding */
+			margin: 0 auto;            /* centers it */
+			display: block;
+			width: fit-content;
+			margin: 0 0 1.25em 0;        /* optional, keeps it tight around image */
+		}
+
+		/* Make the image itself clean and square */
+		.image.fit.square img {
+			aspect-ratio: 1 / 1;
+			object-fit: cover;
+			width: 70%;                /* adjust size */
+			display: block;
+			margin: 0 auto;
+			border-radius: 0;          /* remove rounded edges */
+		}
+
+		.image:before {
+			display: none !important;
+			content: none !important;
+		}
 
 		
   		
