@@ -2588,7 +2588,53 @@ input, select, textarea {
 			content: none !important;
 		}
 
+		.video-wrapper {
+		display: flex;
+		justify-content: center;
+		margin: 1em 0;
+		}
+
+		.video-wrapper video {
+		width: 100%;
+		max-width: 600px;
+		border-radius: 12px;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+		}
+
+		.video-wrapper.left video {
+		float: left;
+		margin: 0 1em 1em 0;
+		width: 45%;
+		max-width: 400px;
+		}
+		.perma-video {
+		width: 100%;
+		max-width: 800px;
+		border-radius: 10px;
+		box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+		object-fit: contain; /* or cover if you want it to fill the box */
+		pointer-events: none; /* makes it non-interactable with mouse/touch */
+		user-select: none;
+		-webkit-user-drag: none;
+		outline: none; /* remove focus outline if somehow focused */
+		}
+
+		.flex-container {
+			display: flex;
+			align-items: flex-start;
+			gap: 20px;
+		}
 		
+		.flex-container video {
+			border-radius: 8px;
+			object-fit: cover;
+		}
+		
+		.flex-container p {
+			flex: 1;
+			margin-top: 60px;
+		}
+
   		
 
 
