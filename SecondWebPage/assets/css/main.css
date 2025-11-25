@@ -2583,6 +2583,25 @@ input, select, textarea {
 			border-radius: 0;          /* remove rounded edges */
 		}
 
+		.image.fit.square iframe {
+		aspect-ratio: 1 / 1;
+		width: 70%;
+		display: block;
+		margin: 0 auto;
+		border-radius: 0;
+		/* optional, to remove default border in some browsers */
+		border: 0;
+		}
+
+		.image.fit.square video {
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+		width: 70%;
+		display: block;
+		margin: 0 auto;
+		border-radius: 0;
+		}
+
 		.image:before {
 			display: none !important;
 			content: none !important;
